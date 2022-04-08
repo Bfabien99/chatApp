@@ -18,7 +18,7 @@ if(isset($_GET["user"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/chatApp/images/conversation_chat_deal_agreement_icon_124665.ico" type="image/x-icon">
-    <script src="../../jquery.js"></script>
+    <script src="../jquery.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>ChatApp Welcome</title>
     <style>
@@ -110,10 +110,6 @@ if(isset($_GET["user"])){
             position: relative;
         }
 
-        .otherUser:hover{
-            background-color: #1A232F;
-        }
-
         .notif{
             background-color: #5c9df8;
             min-width:10px;
@@ -188,7 +184,7 @@ if(isset($_GET["user"])){
                     $('#box').html(data);
                 }
             });
-        },700);
+        },300);
 
     });
 </script>

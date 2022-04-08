@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/chatApp/images/conversation_chat_deal_agreement_icon_124665.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <script src="../jquery.js"></script>
+    <script src="jquery.js"></script>
     <title>sigin</title>
     <style>
         .container{
