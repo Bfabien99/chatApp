@@ -19,7 +19,7 @@
             $result = $connect->prepare($sql);
             $result->execute();
             if($result){
-                echo "ok";
+                echo "Inscription réussie, vous pouvez vous connecter";
             }else{
                 echo "Désolé, nous ne pouvons pas vous inscrire";
             }
