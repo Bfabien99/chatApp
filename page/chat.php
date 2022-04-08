@@ -149,6 +149,14 @@
             font-size: 1.1em;
             flex-wrap: wrap;
         }
+        .msg-sent em{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .msg-sent em i{
+            color: #1A132F;
+        }
         .msg-received{
             align-self: flex-start;
             display: flex;
@@ -199,7 +207,7 @@
 
                 <?php foreach($messages as $message):?>
                     <?php if(($message['fromUser'] == $_SESSION['id']) && ($message['see'] == 1)):?>
-                        <div class='msg-sent'><p><?=nl2br($message['message']);?></p><em><?=date("H:i:s",strtotime($message['date']))?> vv</em></div>
+                        <div class='msg-sent'><p><?=nl2br($message['message']);?></p><em><?=date("H:i:s",strtotime($message['date']))?> <i>vv</i></em></div>
                     <?php elseif(($message['fromUser'] == $_SESSION['id']) &&  ($message['see'] == 0)):?>
                         <div class='msg-sent'><p><?=nl2br($message['message']);?></p><em><?=date("H:i:s",strtotime($message['date']))?></em></div>
                     <?php else:?>

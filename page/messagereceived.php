@@ -17,7 +17,7 @@
             }
             elseif(($message['fromUser'] == $_POST['user']) && ($message['see'] == 1))
             {
-                $msg .="<div class='msg-sent'><p>".nl2br($message['message'])."</p><em>".date("H:i:s",strtotime($message['date']))." vv</em></div>";
+                $msg .="<div class='msg-sent'><p>".nl2br($message['message'])."</p><em>".date("H:i:s",strtotime($message['date']))." <i>vv</i></em></div>";
             }
             else
             {
